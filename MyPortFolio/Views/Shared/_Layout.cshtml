@@ -1,49 +1,142 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MyPortFolio</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MyPortFolio.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cosmix Free HTML5 Responsive Template | Template Stock</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Responsive-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!--Animation-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--Prettyphoto-->
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!--Owl-Slider-->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyPortFolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div id="preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
+    <!--Navigation-->
+    <header id="menu">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#menu"><img src="images/Logo/01.png" alt=""></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="scroll" href="#menu">Home</a></li>
+                            <li><a class="scroll" href="#about">About</a></li>
+                            <li><a class="scroll" href="#service">Education</a></li>
+                            <li><a class="scroll" href="#features">Features</a></li>
+                            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                            <li><a class="scroll" href="#pricing">Pricing</a></li>
+                            <li><a class="scroll" href="#team">Team</a></li>
+                            <li><a class="scroll" href="#blog">Blog</a></li>
+                            <li><a class="scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
+                <!-- /.container-fluid -->
             </div>
-        </nav>
+        </div>
     </header>
+    <section id="slider">
+        <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active" style="background-image:url(images/Slider/01.jpg)">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h2>Alaa Zahran</h2>
+                                <h1>Software Developer(.Net)</h1>
+                                <p>
+                                    I am a highly skilled and motivated software engineer with extensive experience in full-stack web development, specializing in the .NET framework.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image:url(images/Slider/02.jpg)">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h2>Alaa Zahran</h2>
+                                <h1>Software Developer(.Net)</h1>
+                                <p>
+                                    I have a proven track record of delivering high-quality software solutions that meet both client and business needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image:url(images/Slider/03.jpg)">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <h2>Alaa Zahran</h2>
+                                <h1>Software Developer(.Net)</h1>
+                                <p>
+                                    I am eager to leverage my expertise to contribute to innovative projects and further enhance my skills in a dynamic software development environment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        <!--/#home-carousel-->
+    </section>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - MyPortFolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+   
 </body>
 </html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--Boostrap-Jquery-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Preetyphoto-Jquery-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--NiceScroll-Jquery-->
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<!--Isotopes-->
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<!--Wow-Jquery-->
+<script type="text/javascript" src="js/wow.js"></script>
+<!--Count-Jquey-->
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--Owl-Crousels-Jqury-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--Main-Scripts-->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
